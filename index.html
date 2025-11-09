@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>如我們所書⟣</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>如我們所書⟣</h1>
+    <button id="addBookshelfBtn">新增書櫃</button>
+  </header>
+
+  <main>
+    <div id="bookshelves"></div>
+  </main>
+
+  <div id="editorModal" class="hidden">
+    <div id="editorContainer">
+      <div id="toolPanel">
+        <button id="drawBtn" title="繪畫">🖊️</button>
+        <button id="eraseBtn" title="橡皮擦">🧹</button>
+        <button id="textBtn" title="文字">🔤</button>
+        <button id="imageBtn" title="圖片">🖼️</button>
+        <button id="prevPageBtn" title="上一頁">◀️</button>
+        <button id="nextPageBtn" title="下一頁">▶️</button>
+        <button id="exportPageBtn" title="匯出當前頁">📤</button>
+        <button id="exportBookBtn" title="匯出整本">📦</button>
+        <button id="closeEditorBtn" title="關閉">❌</button>
+      </div>
+      <canvas id="editorCanvas"></canvas>
+    </div>
+  </div>
+
+  <input type="file" id="imageUpload" accept="image/*" style="display:none"/>
+
+  <script src="app.js"></script>
+</body>
+</html>
